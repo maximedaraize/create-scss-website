@@ -25,11 +25,9 @@ contributors: false
 
 ## Introduction
 
-A command line interface for a quick and easy way structure your scss ⚡️
+A command-line interface for a quick and easy way to structure your scss  ⚡️
 
-Generate a scss folder structure anywhere you want in your application, choose what kind of
-template you want to use (default, blank, custom). Start coding faster without having to create the same files 
-over and over.
+Generate an scss folder structure anywhere you want in your application, choose what kind of template you want to use (default, blank, custom). Start coding faster without having to create the same files over and over
 
 
 ## Getting started
@@ -53,20 +51,20 @@ After that, you'll be able to use the create-scss-cli command in your project lo
 create-scss-cli
 ```
 
-You will then be prompt with a series of question to make sure the cli generate the files you want and where you want it.
+You will then be prompt with a series of questions to make sure the cli generate the files you want and where you want them.
 
 <img src="https://res.cloudinary.com/mdaraize/image/upload/v1632059503/create-scss-cli/cli_phvt19.png" alt="example of create-scss-cli in action">
 
 ## Usage
 
-Choose between 3 options: [Learn more](https://createscss.com)
+Choose between 3 options:
 
 - **Default**: Original structure with code 💫
 - **Blank**: Original structure without code 📂
 - **Custom**: Remove directory you do not need 🎯
 
 ::: warning
-When choosing the path to install your scss structure, do not forget to add a foward slash at the end. See example below.
+When choosing the path to install your scss structure, do not forget to add a forward slash at the end. See the example below.
 :::
 
 ```sh
@@ -136,17 +134,17 @@ scss
 
 ## Roadmap
 
-For more information on this project and futures features, visit [our roadmap](https://github.com/maximedaraize/create-scss-cli/projects/1). You'll see all ongoing issues, features and discussion about the create scss cli project.
+For more information on this project and futures features, visit [our roadmap](https://github.com/maximedaraize/create-scss-cli/projects/1). You'll see all ongoing issues, features, and discussion about the create scss cli project.
 
 ## FAQ
 
-**Q:** Why did you publishing `create-scss-cli` when [create-scss](https://github.com/maximedaraize/create-scss) already exists ?<br>
-**A:** The first iteration of this project [create-scss](https://github.com/maximedaraize/create-scss) was created to solve one problem. Create a unify scss structure for our developer team. Having the same scss structure help us to maintain our style with more cohesion. The **CLI** version give use more flexibility, by giving us options of which structure we want to install, and it is also easier to integrate in existing project, because we can now choose where to install inside our projects.
+**Q:** Why did you publish [create-scss-cli](https://www.npmjs.com/package/create-scss-cli) when [create-scss](https://www.npmjs.com/package/create-scss) already exists ?<br>
+**A:** The first iteration of this project was created to solve one problem, create a unified scss structure for the dev team. Having the same structure helped us to maintain our code with more cohesion. The **cli** version is more flexible and easier to integrate into existing projects. It gives a choice to the developers on how they want to implement their code, which is the main reason why it was created.
 
 <hr>
 
 **Q:** Can i still use [create-scss](https://www.npmjs.com/package/create-scss) even if it is deprecated ?<br>
-**A:** YES. I do not have any plan to release new version in the future. The final version of this package is ![npm version](https://img.shields.io/npm/v/create-scss). If it helps you in any way, please continue to use it.👍
+**A:** YES. There is no plan to release new version in the future. The final version of the package is ![npm version](https://img.shields.io/npm/v/create-scss). If it helps you in any way, please continue to use it.👍
 
 <hr>
 
@@ -155,13 +153,12 @@ For more information on this project and futures features, visit [our roadmap](h
 
 <hr>
 
-**Q:** I do not see a **packge.json**, what depedencies or command should i use ?<br>
-**A:** Giving the user an option to create or update an existing packge.json is in our plan [see here](https://www.npmjs.com/package/create-scss-cli). Meanwhile here's a list of depedencies we recommand to compile your scss and scripts we regularly uses ourselves.
-
+**Q:** I do not see a **packge.json**, what dependencies or commands should i use ?<br>
+**A:** Giving the user an option to create or update an existing packge.json is in our plan [see here](https://github.com/maximedaraize/create-scss-cli/issues/2). Meanwhile here's a list of dependencies we recommend to compile your scss and scripts we regularly use ourselves.
 #### Depedencies
 
-- **autoprefixer**: Use to add vendor prefix to your css [Learn more](https://github.com/postcss/autoprefixer)
-- **postcss-cli**: Use to transform your css [Learn more](https://postcss.org)
+- **autoprefixer**: Add vendor prefix to your css [Learn more](https://github.com/postcss/autoprefixer)
+- **postcss-cli**: Transform your css [Learn more](https://postcss.org)
 - **sass**: Primary implementation of Sass [Learn more](https://sass-lang.com/dart-sass)
 
 ```json
