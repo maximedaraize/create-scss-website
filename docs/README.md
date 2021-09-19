@@ -5,7 +5,7 @@ head:
       content: width=device-width, initial-scale=1.0
   - - link
     - rel: icon
-      href: /favicon-32x32.png
+      href: /favicon.ico
 ---
 <style>
 :root {
