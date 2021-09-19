@@ -4,15 +4,6 @@ module.exports = {
   description: "Official guide of create scss cli",
 
   themeConfig: {
-    head: [
-      [
-        "link",
-        {
-          rel: "icon",
-          href: "/favicon.ico",
-        },
-      ],
-    ],
     logo: "https://res.cloudinary.com/mdaraize/image/upload/v1590871168/favicon.svg",
     navbar: [
       // NavbarItem
