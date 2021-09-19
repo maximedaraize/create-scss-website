@@ -1,0 +1,15 @@
+{
+  "name": "create-scss-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/maximedaraize/create-scss-website.git",
+  "author": "Maxime <maxime.daraize@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.26"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
