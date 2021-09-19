@@ -19,8 +19,6 @@ contributors: false
 --back-to-top-color: #0466c8 !important;
   --back-to-top-color-hover: #0466c8 !important; 
 }
-
-
 </style>
 
 # Guide
@@ -28,6 +26,11 @@ contributors: false
 ## Introduction
 
 A command line interface for a quick and easy way structure your scss ⚡️
+
+Generate a scss folder structure anywhere you want in your application, choose what kind of
+template you want to use (default, blank, custom). Start coding faster without having to create the same files 
+over and over.
+
 
 ## Getting started
 
@@ -154,6 +157,33 @@ For more information on this project and futures features, visit [our roadmap](h
 
 **Q:** I do not see a **packge.json**, what depedencies or command should i use ?<br>
 **A:** Giving the user an option to create or update an existing packge.json is in our plan [see here](https://www.npmjs.com/package/create-scss-cli). Meanwhile here's a list of depedencies we recommand to compile your scss and scripts we regularly uses ourselves.
+
+#### Depedencies
+
+- **autoprefixer**: Use to add vendor prefix to your css [Learn more](https://github.com/postcss/autoprefixer)
+- **postcss-cli**: Use to transform your css [Learn more](https://postcss.org)
+- **sass**: Primary implementation of Sass [Learn more](https://sass-lang.com/dart-sass)
+
+```json
+"dependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0",
+    "sass": "^1.27.0"
+  }
+```
+
+#### Scripts
+
+- watch: compile your scss on save
+- build: compile your scss into css and then minified it, remove any source map and add vendor prefix
+
+```json
+"scripts": {
+    "watch": "sass scss/main.scss css/style.css --watch",
+    "build": "sass scss/main.scss css/style.css --style=compressed --no-source-map && postcss css/style.css -o css/style.css --use autoprefixer -b 'last 4 versions'"
+  }
+```
+<hr>
 
 ## Contribution
 
