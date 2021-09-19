@@ -4,7 +4,8 @@ module.exports = {
   description: "Official guide of create scss cli",
 
   themeConfig: {
-    logo: "https://res.cloudinary.com/mdaraize/image/upload/v1590871168/favicon.svg",
+    logo: "https://res.cloudinary.com/mdaraize/image/upload/v1632065974/create-scss-cli/LOGO_create-scss-cli-05_ii76ib.svg",
+    logoDark: "https://res.cloudinary.com/mdaraize/image/upload/v1632065980/create-scss-cli/LOGO_create-scss-cli-07_tmybf3.svg",
     navbar: [
       // NavbarItem
       {
