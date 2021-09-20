@@ -21,5 +21,4 @@ module.exports = {
     ],
   },
 };
-{/* <script defer data-domain="createscss.com" src="https://plausible.io/js/plausible.js"></script> */}
 
