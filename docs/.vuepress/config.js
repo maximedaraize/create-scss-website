@@ -3,7 +3,7 @@ module.exports = {
   title: "CREATE SCSS CLI",
   description: "Official guide of create scss cli",
   head: [
-    ['script', {'data-domain': 'createscss.com', src: 'https://plausible.io/js/plausible.js'}]
+    ['script', {'defer': '','data-domain': 'createscss.com', src: 'https://plausible.io/js/plausible.js'}]
   ],
   themeConfig: {
     logo: "https://res.cloudinary.com/mdaraize/image/upload/v1632065974/create-scss-cli/LOGO_create-scss-cli-05_ii76ib.svg",
