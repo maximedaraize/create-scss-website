@@ -3454,10 +3454,10 @@ vue@^3.2.3:
     "@vue/runtime-dom" "3.2.12"
     "@vue/shared" "3.2.12"
 
-vuepress-plugin-plausible@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-plausible/-/vuepress-plugin-plausible-0.0.2.tgz#adadd16b33fa769d9bd748d46d235b4cff7d6c1b"
-  integrity sha512-EbfcZZpsGb46K2C9zrhQZaj1fRCT4uZFDu9XRxecuFrqGX84dBTquTwRF/4SMUes3m7iAKVaK/qmZaSG08P1uA==
+vuepress-plugin-plausible-analytics@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-plausible-analytics/-/vuepress-plugin-plausible-analytics-0.2.1.tgz#d6733b17305bd37d5b9797460c8a8d179b79fc2d"
+  integrity sha512-e4ZLAFEbfhjpHv08+QqO1lMZeDa/kcg71yLtzG1LCre7sfihQyuV82ZFU3yGflqDgimcfv2AkZe24fIdoRqYmg==
 
 vuepress@^2.0.0-beta.26:
   version "2.0.0-beta.26"
