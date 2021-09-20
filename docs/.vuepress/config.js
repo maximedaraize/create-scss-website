@@ -1,4 +1,7 @@
 module.exports = {
+  plugins: [
+    'plausible', { domain: 'createscss.com' },
+  ],
   lang: "en-US",
   title: "CREATE SCSS CLI",
   description: "Official guide of create scss cli",
