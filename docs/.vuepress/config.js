@@ -1,9 +1,4 @@
 module.exports = {
-  plugins: [
-    ["plausible-analytics", {
-      domain: 'stats.createscss.com'
-    }]
-  ],
   lang: "en-US",
   title: "CREATE SCSS CLI",
   description: "Official guide of create scss cli",
