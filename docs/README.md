@@ -155,7 +155,7 @@ For more information on this project and futures features, visit [our roadmap](h
 
 <hr>
 
-**Q:** I do not see a **packge.json**, what dependencies or commands should i use ?<br>
+**Q:** I do not see a **package.json**, what dependencies or commands should i use ?<br>
 **A:** Giving the user an option to create or update an existing packge.json is in our plan [see here](https://github.com/maximedaraize/create-scss-cli/issues/2). Meanwhile here's a list of dependencies we recommend to compile your scss and scripts we regularly use ourselves.
 #### Depedencies
 
