@@ -36,7 +36,7 @@ Generate an scss folder structure anywhere you want in your application, choose 
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/)
+- [Node 14](https://nodejs.org/en/)
 - [Npm](https://www.npmjs.com)
 
 ### Installation
