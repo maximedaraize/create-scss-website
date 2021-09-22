@@ -3,6 +3,9 @@ head:
   - - meta
     - name: viewport
       content: width=device-width, initial-scale=1.0
+  - - meta
+    - name: robots
+      content: index, follow
   - - link
     - rel: icon
       href: /favicon.png
@@ -12,7 +15,6 @@ contributors: false
 :root {
   scroll-behavior: smooth;
   --c-text-accent: #0466c8;
-  
 }
 
 .back-to-top {
@@ -34,7 +36,7 @@ Generate an scss folder structure anywhere you want in your application, choose 
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/)
+- [Node 14](https://nodejs.org/en/)
 - [Npm](https://www.npmjs.com)
 
 ### Installation
@@ -53,7 +55,7 @@ create-scss-cli
 
 You will then be prompt with a series of questions to make sure the cli generate the files you want and where you want them.
 
-<img src="https://res.cloudinary.com/mdaraize/image/upload/v1632059503/create-scss-cli/cli_phvt19.png" alt="example of create-scss-cli in action">
+<img src="https://res.cloudinary.com/mdaraize/image/upload/v1632059503/create-scss-cli/cli_phvt19.webp" alt="example of create-scss-cli in action">
 
 ## Usage
 
