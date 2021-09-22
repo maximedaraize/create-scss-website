@@ -1,6 +1,6 @@
 module.exports = {
   lang: "en-US",
-  title: "CREATE SCSS CLI",
+  title: "create scss cli",
   description: "Official guide of create scss cli",
   head: [
     ['script', {'defer': '','data-domain': 'createscss.com', src: 'https://plausible.io/js/plausible.js'}]

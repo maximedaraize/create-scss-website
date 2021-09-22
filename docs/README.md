@@ -15,7 +15,6 @@ contributors: false
 :root {
   scroll-behavior: smooth;
   --c-text-accent: #0466c8;
-  
 }
 
 .back-to-top {
@@ -56,7 +55,7 @@ create-scss-cli
 
 You will then be prompt with a series of questions to make sure the cli generate the files you want and where you want them.
 
-<img src="https://res.cloudinary.com/mdaraize/image/upload/v1632059503/create-scss-cli/cli_phvt19.png" alt="example of create-scss-cli in action">
+<img src="https://res.cloudinary.com/mdaraize/image/upload/v1632059503/create-scss-cli/cli_phvt19.webp" alt="example of create-scss-cli in action">
 
 ## Usage
 
