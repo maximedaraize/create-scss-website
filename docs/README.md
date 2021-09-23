@@ -41,15 +41,37 @@ Generate an scss folder structure anywhere you want in your application, choose 
 
 ### Installation
 
-The first thing you'll need to do is to install the cli globally. Use this command in your terminal :
+The first thing you'll need to do is to install the cli globally. Use this command in your terminal.
 
-```sh
+<CodeGroup>
+  <CodeGroupItem title="NPM" active>
+
+```sh:no-line-numbers
 npm i -g create-scss-cli
 ```
 
-After that, you'll be able to use the create-scss-cli command in your project loke so:
+  </CodeGroupItem>
 
-```sh
+  <CodeGroupItem title="YARN">
+
+```sh:no-line-numbers
+yarn global add create-scss-cli
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="NPX">
+
+```sh:no-line-numbers
+npx create-scss-cli@latest
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
+After that, you'll be able to use the create-scss-cli command anywhre.
+
+```sh:no-line-numbers
 create-scss-cli
 ```
 
@@ -69,7 +91,7 @@ Choose between 3 options:
 When choosing the path to install your scss structure, do not forget to add a forward slash at the end. See the example below.
 :::
 
-```sh
+```sh:no-line-numbers
 root
     └── level-1
         └── level-2
@@ -88,7 +110,7 @@ level-1/level-2
 
 This is the default scss structure.
 
-```bash
+```sh:no-line-numbers
 scss
     │
     ├── abstracts
@@ -163,7 +185,7 @@ For more information on this project and futures features, visit [our roadmap](h
 - **postcss-cli**: Transform your css [Learn more](https://postcss.org)
 - **sass**: Primary implementation of Sass [Learn more](https://sass-lang.com/dart-sass)
 
-```json
+```json:no-line-numbers
 "dependencies": {
     "autoprefixer": "^9.7.4",
     "postcss-cli": "^7.1.0",
@@ -176,7 +198,7 @@ For more information on this project and futures features, visit [our roadmap](h
 - watch: compile your scss on save
 - build: compile your scss into css and then minified it, remove any source map and add vendor prefix
 
-```json
+```json:no-line-numbers
 "scripts": {
     "watch": "sass scss/main.scss css/style.css --watch",
     "build": "sass scss/main.scss css/style.css --style=compressed --no-source-map && postcss css/style.css -o css/style.css --use autoprefixer -b 'last 4 versions'"
