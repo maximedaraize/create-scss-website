@@ -27,9 +27,9 @@ contributors: false
 
 ## Introduction
 
-A command-line interface for a quick and easy way to structure your scss  ⚡️
+⚡️ A command-line interface for a quick and easy way to organize your scss.
 
-Generate an scss folder structure anywhere you want in your application, choose what kind of template you want to use (default, blank, custom). Start coding faster without having to create the same files over and over
+Generate an scss folder structure anywhere you want in your application. Choose what kind of preset you want to use (default, blank, custom). Manage your file the same way in every project, and save time doing it.
 
 
 ## Getting started
