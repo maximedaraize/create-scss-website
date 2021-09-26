@@ -51,6 +51,14 @@ npm i -g create-scss-cli
 ```
 
   </CodeGroupItem>
+  
+  <CodeGroupItem title="PNPM">
+
+```sh:no-line-numbers
+pnpm i -g create-scss-cli
+```
+
+  </CodeGroupItem>
 
   <CodeGroupItem title="YARN">
 
@@ -83,15 +91,15 @@ You will then be prompt with a series of questions to make sure the cli generate
 
 ## Usage
 
-Choose between 3 options:
+Choose between 3 preset:
 
-- **Complete**: Original structure with code 💫
-- **Clean**: Original structure without code 📂
-- **Custom**: Remove directory you do not need 🎯
+- **Complete**: Complete scss folder structure and starter code like mixins, function, reset, etc.
+- **Clean**: Complete scss folder structure without the starter code.
+- **Custom**: Choose the folders you want to exclude from the installation.
 
 ## Structure
 
-This is the default scss structure.
+This is the **complete** scss structure.
 
 ```sh:no-line-numbers
 scss
@@ -151,7 +159,7 @@ For more information on this project and futures features, visit [our roadmap](h
 <hr>
 
 **Q:** Can i still use [create-scss](https://www.npmjs.com/package/create-scss) even if it is deprecated ?<br>
-**A:** YES. There is no plan to release new version in the future. The final version of the package is ![npm version](https://img.shields.io/npm/v/create-scss). If it helps you in any way, please continue to use it.👍
+**A:** YES. There is no plan to release new version in the future. The final version of the package is ![npm version](https://img.shields.io/npm/v/create-scss). If it helps you, please continue to use it.👍
 
 <hr>
 
