@@ -27,9 +27,9 @@ contributors: false
 
 ## Introduction
 
-⚡️ A command-line interface for a quick and easy way to organize your scss.
+A command-line interface for a quick and easy way to organize your scss.
 
-Generate an scss folder structure anywhere you want in your application. Choose what kind of preset you want to use (default, blank, custom). Manage your file the same way in every project, and save time doing it.
+Generate an scss folder structure anywhere you want in your application. Choose what kind of preset you want to use (complete, clean, custom). Manage your file the same way in every project, and save time doing it.
 
 
 ## Getting started
@@ -73,38 +73,21 @@ After that, you'll be able to use the create-scss-cli command anywhre.
 
 ```sh:no-line-numbers
 create-scss-cli
+#OR
+cs-cli
 ```
 
 You will then be prompt with a series of questions to make sure the cli generate the files you want and where you want them.
 
-<img src="https://res.cloudinary.com/mdaraize/image/upload/v1632059503/create-scss-cli/cli_phvt19.webp" alt="example of create-scss-cli in action">
+<img src="https://res.cloudinary.com/mdaraize/image/upload/v1632598329/create-scss-cli/carbon-cli_dvcu4y.png" alt="create-scss-cli setup example">
 
 ## Usage
 
 Choose between 3 options:
 
-- **Default**: Original structure with code 💫
-- **Blank**: Original structure without code 📂
+- **Complete**: Original structure with code 💫
+- **Clean**: Original structure without code 📂
 - **Custom**: Remove directory you do not need 🎯
-
-::: warning
-When choosing the path to install your scss structure, do not forget to add a forward slash at the end. See the example below.
-:::
-
-```sh:no-line-numbers
-root
-    └── level-1
-        └── level-2
-            └── where-i-want-my-install
-```
-
-::: tip good
-level-1/level-2/
-:::
-
-::: danger bad
-level-1/level-2
-:::
 
 ## Structure
 
