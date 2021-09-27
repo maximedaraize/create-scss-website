@@ -23,25 +23,24 @@ contributors: false
 }
 </style>
 
-# Guide
+# Getting Started
 
-## Introduction
+## Overview
 
 A command-line interface for a quick and easy way to organize your scss.
 
 Generate an scss folder structure anywhere you want in your application. Choose what kind of preset you want to use (complete, clean, custom). Manage your file the same way in every project, and save time doing it.
 
 
-## Getting started
+## Installation
 
 ### Prerequisites
 
 - [Node 14](https://nodejs.org/en/)
 - [Npm](https://www.npmjs.com)
 
-### Installation
 
-The first thing you'll need to do is to install the cli globally. Use this command in your terminal.
+Install create-scss-cli globally.
 
 <CodeGroup>
   <CodeGroupItem title="NPM" active>
@@ -77,7 +76,7 @@ npx create-scss-cli@latest
   </CodeGroupItem>
 </CodeGroup>
 
-After that, you'll be able to use the create-scss-cli command anywhre.
+Use the cli command in your project.
 
 ```sh:no-line-numbers
 create-scss-cli
@@ -89,13 +88,16 @@ You will then be prompt with a series of questions to make sure the cli generate
 
 <img src="https://res.cloudinary.com/mdaraize/image/upload/v1632598329/create-scss-cli/carbon-cli_dvcu4y.png" alt="create-scss-cli setup example">
 
-## Usage
+## Preset
 
-Choose between 3 preset:
+The CLI let you choose between three presets:
+### Complete
+The "**complete**" preset let you install everything. The default folder [structure](#structure), all the scss files and some code to get you started (mixins, functions, variables, etc).
 
-- **Complete**: Complete scss folder structure and starter code like mixins, function, reset, etc.
-- **Clean**: Complete scss folder structure without the starter code.
-- **Custom**: Choose the folders you want to exclude from the installation.
+### Clean
+The "**clean**" preset let you install the same default folder [structure](#structure) minus the code inside. This is particulary useful, if you want to start fresh, and do not need any snippets.
+### Custom
+The "**custom**" preset let you choose the structure you want. Choose between the available folder and create the scss structure you need.
 
 ## Structure
 
@@ -147,54 +149,58 @@ scss
 
 ```
 
+## Integration
+
+There is a lot of different way to compile your **scss** into your project. Here's a little step-bystep guide using some of the most popular way to do it.
+
+### Extension
+
+If you are using [vscode](https://code.visualstudio.com) you can install the [live sass compiler extension](https://ritwickdey.github.io/vscode-live-sass-compiler/) from the Marketplace. It will compile your **scss** and generate an `.css` and `.css.map` file.
+
+### No bundler/tools
+
+- Install your **scss** folder with `cs-cli`
+- Install **sass** as a dev-depedencie `npm i -D sass`
+- Add a script inside your package.json to compile you scss on save.
+- learn more about [dart sass](https://sass-lang.com/dart-sass)
+
+```json:no-line-numbers
+"scripts": {
+    "watch": "sass scss/main.scss css/style.css --watch"
+  }
+```
+### Vite.js
+
+Vite is a great frontend tool, fast and easy to configure. If you are using Vite to scafold your project, you know that there is a multitude of [template preset](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) available. The setup is the same for all of them.
+
+- Install your **scss** folder with `cs-cli`
+- Find the **main.js** file and add `import './scss/main.scss'`
+- Thats it, Vite will do the rest
+
+
+Learn more about [vite](https://vitejs.dev)
 ## Roadmap
 
 For more information on this project and futures features, visit [our roadmap](https://github.com/maximedaraize/create-scss-cli/projects/1). You'll see all ongoing issues, features, and discussion about the create scss cli project.
 
 ## FAQ
 
-**Q:** Why did you publish [create-scss-cli](https://www.npmjs.com/package/create-scss-cli) when [create-scss](https://www.npmjs.com/package/create-scss) already exists ?<br>
+**Q:** Why did you publish [create-scss-cli](https://www.npmjs.com/package/create-scss-cli) when [create-scss](https://www.npmjs.com/package/create-scss) already exists ?
+
 **A:** The first iteration of this project was created to solve one problem, create a unified scss structure for the dev team. Having the same structure helped us to maintain our code with more cohesion. The **cli** version is more flexible and easier to integrate into existing projects. It gives a choice to the developers on how they want to implement their code, which is the main reason why it was created.
 
 <hr>
 
-**Q:** Can i still use [create-scss](https://www.npmjs.com/package/create-scss) even if it is deprecated ?<br>
-**A:** YES. There is no plan to release new version in the future. The final version of the package is ![npm version](https://img.shields.io/npm/v/create-scss). If it helps you, please continue to use it.👍
+**Q:** Can i still use [create-scss](https://www.npmjs.com/package/create-scss) even if it is deprecated ?
+
+**A:** YES. There is no plan to release new version in the future. The final version of the package is ![npm version](https://img.shields.io/npm/v/create-scss). If it helps you, please continue to use it.
 
 <hr>
 
-**Q:** What is your plan for the cli ?<br>
-**A:** You can see here the **create scss cli** [roadmap](https://github.com/maximedaraize/create-scss-cli/projects/1)
+**Q:** Can i use **create-scss-cli** in an existing project or should i use it with new project only. 
 
-<hr>
+**A:** You can do both. The CLI will check if there is already another **scss** folder in the path of your installation, so there wont be any overwride. Because the CLI give you different preset options, it is flexible to either start a new project from scratch with it or intergrate it in your ongoing project.
 
-**Q:** I do not see a **package.json**, what dependencies or commands should i use ?<br>
-**A:** Giving the user an option to create or update an existing packge.json is in our plan [see here](https://github.com/maximedaraize/create-scss-cli/issues/2). Meanwhile here's a list of dependencies we recommend to compile your scss and scripts we regularly use ourselves.
-#### Depedencies
-
-- **autoprefixer**: Add vendor prefix to your css [Learn more](https://github.com/postcss/autoprefixer)
-- **postcss-cli**: Transform your css [Learn more](https://postcss.org)
-- **sass**: Primary implementation of Sass [Learn more](https://sass-lang.com/dart-sass)
-
-```json:no-line-numbers
-"dependencies": {
-    "autoprefixer": "^9.7.4",
-    "postcss-cli": "^7.1.0",
-    "sass": "^1.27.0"
-  }
-```
-
-#### Scripts
-
-- watch: compile your scss on save
-- build: compile your scss into css and then minified it, remove any source map and add vendor prefix
-
-```json:no-line-numbers
-"scripts": {
-    "watch": "sass scss/main.scss css/style.css --watch",
-    "build": "sass scss/main.scss css/style.css --style=compressed --no-source-map && postcss css/style.css -o css/style.css --use autoprefixer -b 'last 4 versions'"
-  }
-```
 <hr>
 
 ## Contribution
