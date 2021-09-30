@@ -27,10 +27,7 @@ contributors: false
 
 ## Overview
 
-A command-line interface for a quick and easy way to organize your scss.
-
-Generate an scss folder structure anywhere you want in your application. Choose what kind of preset you want to use (complete, clean, custom). Manage your file the same way in every project, and save time doing it.
-
+The `create-scss-cli` is a command-line interface that generate an scss folder structure directly into your app. It give you a range of different templates to choose from, making it flexible to integrate in any project. 
 
 ## Installation
 
@@ -40,7 +37,7 @@ Generate an scss folder structure anywhere you want in your application. Choose 
 - [Npm](https://www.npmjs.com)
 
 
-Install create-scss-cli globally.
+Install `create-scss-cli` globally.
 
 <CodeGroup>
   <CodeGroupItem title="NPM" active>
@@ -76,7 +73,7 @@ npx create-scss-cli@latest
   </CodeGroupItem>
 </CodeGroup>
 
-Use the cli command in your project.
+Use the CLI command in your project.
 
 ```sh:no-line-numbers
 create-scss-cli
@@ -84,20 +81,19 @@ create-scss-cli
 cs-cli
 ```
 
-You will then be prompt with a series of questions to make sure the cli generate the files you want and where you want them.
+You will then be prompt with a series of questions to make sure the CLI generate the files you want and where you want them.
 
 <img src="https://res.cloudinary.com/mdaraize/image/upload/v1632598329/create-scss-cli/carbon-cli_dvcu4y.png" alt="create-scss-cli setup example">
 
-## Preset
+## Templates
 
-The CLI let you choose between three presets:
 ### Complete
-The "**complete**" preset let you install everything. The default folder [structure](#structure), all the scss files and some code to get you started (mixins, functions, variables, etc).
+The "**complete**" template let you install everything. The default folder [structure](#structure), all the scss files and some code to get you started (mixins, functions, variables, etc).
 
 ### Clean
-The "**clean**" preset let you install the same default folder [structure](#structure) minus the code inside. This is particulary useful, if you want to start fresh, and do not need any snippets.
+The "**clean**" template let you install the same default folder [structure](#structure) minus the code inside. This is particulary useful, if you want to start fresh, and do not need any snippets.
 ### Custom
-The "**custom**" preset let you choose the structure you want. Choose between the available folder and create the scss structure you need.
+The "**custom**" template let you choose the structure you want. Choose between the available folder and create the scss structure you need.
 
 ## Structure
 
@@ -157,28 +153,90 @@ There is a lot of different way to compile your **scss** into your project. Here
 
 If you are using [vscode](https://code.visualstudio.com) you can install the [live sass compiler extension](https://ritwickdey.github.io/vscode-live-sass-compiler/) from the Marketplace. It will compile your **scss** and generate an `.css` and `.css.map` file.
 
-### No bundler/tools
+### Zero bundler
 
-- Install your **scss** folder with `cs-cli`
-- Install **sass** as a dev-depedencie `npm i -D sass`
+- Install the template of your choice using: `cs-cli`
+- Install **sass** as a dev-depedencie `npm i sass --save-dev`
 - Add a script inside your package.json to compile you scss on save.
-- learn more about [dart sass](https://sass-lang.com/dart-sass)
+- Use `npm run watch` to run the script
 
 ```json:no-line-numbers
 "scripts": {
     "watch": "sass scss/main.scss css/style.css --watch"
   }
 ```
+
+Learn more about [npm scripts](https://docs.npmjs.com/cli/v7/using-npm/scripts)
 ### Vite.js
 
-Vite is a great frontend tool, fast and easy to configure. If you are using Vite to scafold your project, you know that there is a multitude of [template preset](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) available. The setup is the same for all of them.
+Vite is a great frontend tool, fast and easy to configure. If you are using Vite to scafold your project, you know that there is a multitude of [template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) available. The setup is the same for all of them.
 
-- Install your **scss** folder with `cs-cli`
-- Find the **main.js** file and add `import './scss/main.scss'`
-- Thats it, Vite will do the rest
+- Install vite and choose your template `npm init vite@latest`
+- Install the template of your choice using: `cs-cli`
+- Import your scss inside the `main.js` file
+- Use `npm run dev` to run vite
 
+```js:no-line-numbers
+//main.js
+import './scss/main.scss'
+```
 
 Learn more about [vite](https://vitejs.dev)
+
+### Gulp
+
+Gulp is another popular tool to automate and enhance your workflow. With Gulp you will need to install some depedencies and configure `gulpfile.js`.
+
+- Install the template of your choice using: `cs-cli`
+- Install gulp `npm install --global gulp-cli`
+- Install sass & gulp-sass `npm i sass gulp-sass --save-dev`
+- Create a `gulpfile.js` and add the follow config
+- Use `gulp sass` to compile your scss
+
+```js:no-line-numbers
+const gulp = require('gulp');
+const sass = require('gulp-sass')((require('sass));
+
+gulp.task('sass', function(){
+  return gulp.src('./scss/main.scss') //source
+  .pipe(sass()) //using gulp-sass
+  .pipe(gulp.dest('./css')) //destination
+})
+```
+Learn more about [gulp](https://gulpjs.com)
+### Parcel
+
+With Parcel, you do not need a configuration file in your project, simply link your main.scss to an index.html.
+
+- Install the template of your choice using: `cs-cli`
+- Install parcel `npm install parcel-bundler --save-dev`
+- Install sass `npm i sass --save-dev`
+- Add an index.html file and link your main.scss to it
+- Add the following scripts inside your package.json
+
+```html:no-line-numbers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createscss.com</title>
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+```json:no-line-numbers
+"scripts": {
+    "dev": "parcel index.html"
+  }
+```
+
+
 ## Roadmap
 
 For more information on this project and futures features, visit [our roadmap](https://github.com/maximedaraize/create-scss-cli/projects/1). You'll see all ongoing issues, features, and discussion about the create scss cli project.
@@ -199,7 +257,7 @@ For more information on this project and futures features, visit [our roadmap](h
 
 **Q:** Can i use **create-scss-cli** in an existing project or should i use it with new project only. 
 
-**A:** You can do both. The CLI will check if there is already another **scss** folder in the path of your installation, so there wont be any overwride. Because the CLI give you different preset options, it is flexible to either start a new project from scratch with it or intergrate it in your ongoing project.
+**A:** You can do both. The CLI will check if there is already another **scss** folder in the path of your installation, so there wont be any overwride. Because the CLI give you different template options, it is flexible to either start a new project from scratch with it or intergrate it in your ongoing project.
 
 <hr>
 
