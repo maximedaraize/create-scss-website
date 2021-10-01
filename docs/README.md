@@ -11,6 +11,7 @@ head:
       href: /favicon.png
 contributors: false
 ---
+
 <style>
 :root {
   scroll-behavior: smooth;
@@ -27,7 +28,7 @@ contributors: false
 
 ## Overview
 
-The `create-scss-cli` is a command-line interface that generate an scss folder structure directly into your app. It give you a range of different templates to choose from, making it flexible to integrate in any project. 
+The `create-scss-cli` is a command-line interface that generate an scss folder structure directly into your app. It give you a range of different templates to choose from, making it flexible to integrate in any project.
 
 ## Installation
 
@@ -35,7 +36,6 @@ The `create-scss-cli` is a command-line interface that generate an scss folder s
 
 - [Node 14](https://nodejs.org/en/)
 - [Npm](https://www.npmjs.com)
-
 
 Install `create-scss-cli` globally.
 
@@ -88,11 +88,15 @@ You will then be prompt with a series of questions to make sure the CLI generate
 ## Templates
 
 ### Complete
+
 The "**complete**" template let you install everything. The default folder [structure](#structure), all the scss files and some code to get you started (mixins, functions, variables, etc).
 
 ### Clean
+
 The "**clean**" template let you install the same default folder [structure](#structure) minus the code inside. This is particulary useful, if you want to start fresh, and do not need any snippets.
+
 ### Custom
+
 The "**custom**" template let you choose the structure you want. Choose between the available folder and create the scss structure you need.
 
 ## Structure
@@ -149,12 +153,9 @@ scss
 
 There is a lot of different way to compile your **scss** into your project. Here's a little step-bystep guide using some of the most popular way to do it.
 
-### Extension
+### Dart Sass
 
-If you are using [vscode](https://code.visualstudio.com) you can install the [live sass compiler extension](https://ritwickdey.github.io/vscode-live-sass-compiler/) from the Marketplace. It will compile your **scss** and generate an `.css` and `.css.map` file.
-
-### Zero bundler
-
+- Add an package.json file `npm init -y`
 - Install the template of your choice using: `cs-cli`
 - Install **sass** as a dev-depedencie `npm i sass --save-dev`
 - Add a script inside your package.json to compile you scss on save.
@@ -167,6 +168,7 @@ If you are using [vscode](https://code.visualstudio.com) you can install the [li
 ```
 
 Learn more about [npm scripts](https://docs.npmjs.com/cli/v7/using-npm/scripts)
+
 ### Vite.js
 
 Vite is a great frontend tool, fast and easy to configure. If you are using Vite to scafold your project, you know that there is a multitude of [template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) available. The setup is the same for all of them.
@@ -203,7 +205,9 @@ gulp.task('sass', function(){
   .pipe(gulp.dest('./css')) //destination
 })
 ```
+
 Learn more about [gulp](https://gulpjs.com)
+
 ### Parcel
 
 With Parcel, you do not need a configuration file in your project, simply link your main.scss to an index.html.
@@ -225,7 +229,7 @@ With Parcel, you do not need a configuration file in your project, simply link y
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -235,7 +239,6 @@ With Parcel, you do not need a configuration file in your project, simply link y
     "dev": "parcel index.html"
   }
 ```
-
 
 ## Roadmap
 
@@ -255,7 +258,7 @@ For more information on this project and futures features, visit [our roadmap](h
 
 <hr>
 
-**Q:** Can i use **create-scss-cli** in an existing project or should i use it with new project only. 
+**Q:** Can i use **create-scss-cli** in an existing project or should i use it with new project only.
 
 **A:** You can do both. The CLI will check if there is already another **scss** folder in the path of your installation, so there wont be any overwride. Because the CLI give you different template options, it is flexible to either start a new project from scratch with it or intergrate it in your ongoing project.
 
