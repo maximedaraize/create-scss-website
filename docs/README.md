@@ -107,10 +107,11 @@ This is the **complete** scss structure.
 scss
     │
     ├── abstracts
-    │   ├── functions.scss
-    │   ├── helpers.scss
-    │   ├── mixins.scss
-    │   └── variables.scss
+    │   ├── colors
+    │   ├── fonts
+    │   ├── index
+    │   ├── mixins
+    │   └── spacing
     │
     ├── base
     │   ├── global.scss
