@@ -15,7 +15,7 @@ contributors: false
 
 Inside the abstracts folder of `create-scss`, you'll find multiple files containing helper code. Those files will be available to you by installing the complete template or by specifically choosing it with the custom option.
 
-Here's a preview of what you'll find in those file.
+Here's a preview of what you'll find in  those files.
 
 ## Colors
 

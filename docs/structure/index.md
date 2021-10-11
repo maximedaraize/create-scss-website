@@ -13,8 +13,8 @@ contributors: false
 ---
 # Structure
 
-The `create scss` directory structure is base on the well knowed
-[7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern). In this section will explain the file architecture and how we think you should use it.
+The `create scss` directory structure is base on the
+[7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern). This section will explain the file architecture and how we think you should use it.
 
 ## File architecture
 
@@ -67,28 +67,28 @@ scss
 
 ## Abscracts
 
-The abstracts folder is where we store all helpers Sass codes. Think about *<span class="brand">mixins</span>*, *<span class="brand">variables</span>*, *<span class="brand">functions</span>* etc. One unique aspect of our abstracts folder is that it contain an *<span class="brand">_utility.scss</span>* file, which generated utility css class, for property like `font-size` - `color` - `padding` and so on.
+The abstracts folder is where we store all *"helper's"* Sass codes. Think about *mixins*, *variables*, *functions*, etc. One unique aspect of our abstracts folder is that it contains a *_helper.scss* file, which generated utility css class, for property like `font-size` - `color` - `padding`.
 
 ## Base
 
-The base folder, is where we store the code that is share in every part of our website/app. Think about typography, container size, brand elements.
+The base folder is where we store the code that is shared in every part of our website/app, like typography, container size, brand elements.
 
 ## Components
 
-The components folder is where we store the code that affect specific UI elements, like buttons, cards, table, forms, etc. All element that could be extracted and use on their own.
+The components folder is where we store the code that affects specific UI elements, like buttons, cards, table, forms, etc. All element that could be extracted and use on their own.
 
 ## Layout
 
-The layout folder is where we store all code related structural elements of our website/app. Header, Footer, Section, Sidebar, are the type of elements we should include here.
+The layout folder is where we store all code-related structural elements of our website/app. Header, Footer, Section, Sidebar, are the type of elements we should include here.
 
 ## Pages
 
-The pages folder is where we store specific code about the different view/page of our website/app. The home, contact, about, login are few example of what you could add to this folder.
+The pages folder is where we store specific code about the different view/page of our website/app. The home, contact, about, login are a few examples of what you could add to this folder.
 
 ## Themes
 
-The themes folder is where you can store specific code about different theme in your website/app. 
+The themes folder is where you can store specific code about different themes (dark, high contrast) in your website/app.
 
 ## Vendor
 
-The vendor folder is where you can store external css you use. Think about css framework or code that help you standardize css accross multiple browser.
+The vendor folder is where you can store external CSS you use, like CSS framework or modern reset. 

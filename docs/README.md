@@ -21,9 +21,9 @@ actions:
     type: secondary
 features:
   - title: 💡 Simple
-    details: Minimal setup, perfect for new project and easy to integrate in existing one.
+    details: Minimal setup, perfect for a new project and easy to integrate into existing one.
   - title: 🏂 Flexible 
-    details: Customize the scss structure or choose between multiple templates to start your work.
+    details: Prototyping, creating a design system, or making a marketing website, create-scss give you multiple templates to get you started.
   - title: 🧰 Maintainable
     details: Standardize your file structure throughout your projects, share common knowledge with your team.
 footer: MIT Licensed | Copyright © 2021-present Maxime Daraize

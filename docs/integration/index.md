@@ -13,9 +13,11 @@ contributors: false
 ---
 # Integration
 
-There is a lot of different way to compile your **scss** into your project. Here's a little step-bystep guide using some of the most popular way to do it.
+There is a lot of different ways to compile your **scss** into your project. Here's a little step-by-step guide using some of the most popular ways to do it.
 
 ## Dart Sass
+
+Dart Sass is the primary implementation of Sass, which means it gets new features before any other implementation. It's fast, easy to install, and it compiles to pure JavaScript which makes it easy to integrate into modern web development workflows <sup>[1](https://sass-lang.com/dart-sass)</sup>
 
 - Install the template of your choice using: `cs-cli`
 - Add an package.json file in your app with `npm init -y`
@@ -35,7 +37,7 @@ Learn more about [npm scripts](https://docs.npmjs.com/cli/v7/using-npm/scripts)
 
 ## Vite.js
 
-Vite is a great frontend tool, fast and easy to configure. If you are using Vite to scafold your project, you know that there is a multitude of [template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) available. The setup is the same for all of them.
+Vite is a great frontend tool, fast, and easy to configure. If you are using Vite to scaffold your project, you know that there is a multitude of [template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) available. The setup is the same for all of them.
 
 - Install the template of your choice using: `cs-cli`
 - Install vite and scaffold your project with `npm init vite@latest`
@@ -51,7 +53,7 @@ Learn more about [vite](https://vitejs.dev)
 
 ## Gulp
 
-Gulp is another popular tool to automate and enhance your workflow. With Gulp you will need to install some depedencies and configure `gulpfile.js`.
+Gulp is another popular tool to automate and enhance your workflow. With Gulp, you will need to install some dependencies and configure `gulpfile.js`.
 
 - Install the template of your choice using: `cs-cli`
 - Install gulp `npm install --global gulp-cli`
@@ -75,7 +77,7 @@ Learn more about [gulp](https://gulpjs.com)
 
 ## Parcel
 
-With Parcel, you do not need a configuration file in your project, simply link your main.scss to an index.html.
+With Parcel, you do not need a configuration file in your project, simply link your *main.scss* to an index.html.
 
 - Install the template of your choice using: `cs-cli`
 - Install parcel `npm install parcel-bundler --save-dev`
