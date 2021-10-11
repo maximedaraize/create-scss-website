@@ -1,3 +1,15 @@
+---
+head:
+  - - meta
+    - name: viewport
+      content: width=device-width, initial-scale=1.0
+  - - meta
+    - name: robots
+      content: index, follow
+  - - link
+    - rel: icon
+      href: /favicon.ico
+---
 # Code
 
 Inside the abstracts folder of `create-scss`, you'll find multiple files containing helper code. Those files will be available to you by installing the complete template or by specifically choosing it with the custom option.
